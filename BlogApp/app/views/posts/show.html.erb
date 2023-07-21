@@ -1,0 +1,6 @@
+<h1><%= @post.title %></h1>
+<p><%= @post.content %></p>
+
+<%= link_to "Editar", edit_post_path(@post) %> |
+<%= link_to "Eliminar", post_path(@post), method: :delete, data: { confirm: "¿Estás seguro de eliminar esta publicación?" } %> |
+<%= link_to "Volver a la lista", posts_path %>
